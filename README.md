@@ -1,114 +1,48 @@
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+# English Janala - TailwindCSS & JavaScript
+![screen-capture](https://github.com/user-attachments/assets/10f05056-8b6e-44ab-b6b2-b549f10bc719)
 
----
+## Description
+"English Janala" is a responsive and dynamic website project created using HTML, TailwindCSS and JavaScript. This project was a practice project built to teach English vocabulary with interactive ui and pronunciation.
 
-## ⚡ API Endpoints
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Api Endpoints](#api-endpoints)
+- [Credits](#credits)
 
-1. Get ⚡ All Levels
+## Demo
+You can view the live demo of the project [here](https://moinulhasan45777.github.io/EnglishJanala-TailwindJS/)
 
-```bash
-https://openapi.programming-hero.com/api/levels/all
-```
+## Features
+- Navbar containing Navlinks and the Logo
+- Banner section with a short description of the website and a picture.
+- "Learn Vocabulary" section with 7 interactive buttons for 7 lessons and a search bar to search words.
+- "Words" section with word cards showing in a grid layout
+- Earch word card contains the word and the meaning and pronunciation in Bangla including a button to show a modal with example sentence and another button to hear the pronunciation.
+- Fully responsive for Mobile, Tablet, Laptop and Desktop Screens.
 
-1. Get ⚡ Words by Levels <br/>
-   https:// openapi.programming-hero.com/api/level/{id}
+## Installation
+1. Clone the repository: `git clone https://github.com/moinulhasan45777/EnglishJanala-TailwindJS.git`
+2. Navigate to the project directory: `cd EnglishJanala-TailwindJS`
 
-```bash
-https://openapi.programming-hero.com/api/level/5
-```
+## Usage
+Open the `index.html` file in a web browser to explore the website and learn some new vocabularies.
 
-1. Get ⚡ Words Detail <br/>
-   https:// openapi.programming-hero.com/api/word/{id}
+## Technologies Used
+- HTML5
+- CSS3
+- Tailwind CSS
+- Vanilla JanaScript
 
-```bash
-https://openapi.programming-hero.com/api/word/5
-```
+## Api Endpoints
+- https://openapi.programming-hero.com/api/levels/all
+- https:// openapi.programming-hero.com/api/level/{id}
+- https://openapi.programming-hero.com/api/words/all
+- https:// openapi.programming-hero.com/api/word/{id}
 
-1. Get ⚡ All Words <br/>
 
-```bash
-https://openapi.programming-hero.com/api/words/all
-```
-
-# Work To do
-
-### 1. Show Levels on The UI
-
-- [ ] Show a center-aligned heading as Figma
-
----
-
-- [ ] Create dynamically generated buttons from **API-01** for each lesson
-- [ ] Lesson Buttons will be displayed on page load
-
----
-
-### 2. Show Word Cards Based on Level
-
-- [ ] Show a default text that will be displayed in the Vocabulary section initially
-- [ ] on Clicking a Specific Lesson Button Load All the words from **API-02**
-- [ ] Display all words for a selected lesson in a card format, showing:
-
-  - [ ] Word
-  - [ ] Word meaning & pronunciation
-  - [ ] Two buttons with relevant icons as per Figma
-
-- [ ] Show **\*No Word Found** message if no words exist for a lesson
-
----
-
-- [ ] Create functionality to highlight the active lesson button
-
----
-
-### 3. Use Different Color on The Active Level Button
-
-- [ ] After Successfully Loading words of a level , diffirentiate the button so user can understand which button is active
-
-### 4. Vocabulary Details
-
-- [ ] Create functionality to open a modal when clicking the details icon
-- [ ] Data will be load from **API-03**
-- [ ] modal will displays:
-  - [ ] Word with pronunciation
-  - [ ] Example sentence
-  - [ ] Synonyms
-  - [ ] A "Complete Learning" button to close the modal
-
-### 5. Handling Invalid Data
-
-- [ ] avoid displaying falsy values like `undefined` or `null`
-- [ ] display relevant words if no data is found
-
-### 6. Loading Spinner
-
-- [ ] Create a loading spinner that will be display when vocabulary is loading from API
-
-### 7. Implement Search Functionality
-
-- [ ] Take a input Box.
-- [ ] on Changing value It will Search word and show in the UI.
-- [ ] If anyone Do search reset active button
-
-### 8. Save Word Feature
-
-- [ ] in the UI of Card add a button `Heart icon`
-- [ ] on Clicking it. Store the Word in the Saved Box
-- [ ] Show Saved words in a Different Section.
-
-### 9. Speak your Vocabularies
-
-- [ ] Create functionality for voice pronunciation of vocabulary words
-- [ ] Use below function and implement on clicking sound icon
-
-```js
-function pronounceWord(word) {
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = "en-EN"; // English
-  window.speechSynthesis.speak(utterance);
-}
-```
-
-For More >> you can explore this implementation 👉 [https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ](https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ)
-
----
+## Credits
+The design 'figma' file and the api endpoints was taken from the [Complete Web Development Course](https://web.programming-hero.com/course-details) by Programming Hero. The course provided the necessary resources, including visual assets and images, for building the website.
